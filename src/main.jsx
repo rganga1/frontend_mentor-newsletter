@@ -8,7 +8,7 @@ import App4 from './App4.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <React.StrictMode className="prose">
     <App />
     {/* <App1 /> */}
     {/* <App2 /> */}
