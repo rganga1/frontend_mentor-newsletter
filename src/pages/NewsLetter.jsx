@@ -1,12 +1,8 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 import List from "../components/List";
 import Form from "../components/Form";
 
 // const path=path.resolve(__dirname,"./assets/images/illustration-sign-up-desktop.svg")
 function NewsLetter() {
-  const [page, setPage] = useState("newsletter");
-  const { register, handleSubmit } = useForm();
   return (
     <div className="flex min-h-screen w-[100vw] justify-center items-center bg-[#36384D]">
       <div className="flex flex-col sm:flex-row-reverse justify-between w-full max-w-[848px] sm:h-[560px] gap-4  rounded-br-xl rounded-bl-xl sm:rounded-xl bg-white sm:p-6">
