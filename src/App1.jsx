@@ -1,12 +1,16 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Newsletter from "./pages/NewsLetter.jsx"
+import Success from "./pages/Success.jsx";
 
 function App1() {
   return (
-    <div className="prose">
-      <span>App1</span>
-      <h1>abc</h1>
-      <h2 className="-mt-4">def</h2>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Newsletter/>}/>
+      <Route path="/success" element={<Success/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

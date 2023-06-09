@@ -9,6 +9,9 @@ export default {
         // roboto_regular:["./src/assets/fonts/Roboto-Regular.ttf"],
         roboto_bold:["roboto_bold"],
         roboto_regular:["roboto_regular"]
+      },
+      screens:{
+        "sm":"480px",
       }
     },
   },
