@@ -4,22 +4,31 @@ import { useNavigate } from "react-router";
 
 function Form() {
   const navigate = useNavigate();
-  const { register, handleSubmit, setValue, getValues } = useForm();
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    getValues,
+    formState: { errors },
+  } = useForm();
   return (
     <form
       onSubmit={handleSubmit(() => navigate("/success"))}
       className="w-full">
-      <label htmlFor="email" className="text-sm">
-        Email address <br />
-      </label>
+      <div className="flex justify-between">
+        <label htmlFor="email" className="text-sm font-roboto_bold">
+          Email address <br />
+        </label>
+        {errors.email && <p className="text-sm text-red-600">Valid email required</p>}
+      </div>
       <input
         {...register("email", {
           required: "This field is required",
+          pattern: /^(.+)@(.+)$/,
           onBlur: () => setValue("email", getValues("email").trim()),
         })}
-        className="w-full max-w-md rounded-lg mt-2 mb-4 p-3 border-gray-400 border-2 focus:border-black"
-        type="email"
-        id="email"
+        className={`w-full max-w-md rounded-lg mt-2 mb-4 p-3 border-gray-400 border-2 focus:border-black ${errors.email && "bg-[#FFE8E5] text-red-600"}`}
+        type="text"
         placeholder="email@company.com"
       />
       <input
