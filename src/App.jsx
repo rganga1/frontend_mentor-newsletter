@@ -7,12 +7,12 @@ function App1() {
   return (
     <>
       <h1>Navbar</h1>
-      <HashRouter basename="/frontend_mentor-newsletter">
+      <BrowserRouter basename="/frontend_mentor-newsletter">
         <Routes>
           <Route path="/" element={<Newsletter />} />
           <Route path="/success" element={<Success />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
