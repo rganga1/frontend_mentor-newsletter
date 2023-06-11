@@ -9,7 +9,7 @@ function Success() {
     items-center min-h-screen bg-[#36384D]">
       <div className="flex flex-col gap-6 w-full sm:w-[480px] h-full sm:h-auto sm:rounded-xl bg-white p-2 sm:p-12">
         <img
-          src="src/assets/images/icon-success.svg"
+          src="/images/icon-success.svg"
           alt="success"
           className="w-[3.5rem] h-[3.5rem]"
         />

@@ -6,10 +6,10 @@
 @layer base {
   @font-face {
     font-family:roboto_bold;
-    src:url("./src/assets/fonts/Roboto-Bold.ttf")
+    src:url("/fonts/Roboto-Bold.ttf")
   }
   @font-face {
     font-family:roboto_regular;
-    src:url("./src/assets/fonts/Roboto-Regular.ttf")
+    src:url("/fonts/Roboto-Regular.ttf")
   }
 }

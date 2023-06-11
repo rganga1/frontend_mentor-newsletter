@@ -6,7 +6,8 @@ import Success from "./pages/Success.jsx";
 function App1() {
   return (
     <>
-      <h1>Navbar</h1>
+      {/* uncomment for checking if router works or not */}
+      {/* <h1>Navbar</h1>  */}
       <BrowserRouter basename="/frontend_mentor-newsletter">
         <Routes>
           <Route path="/" element={<Newsletter />} />
