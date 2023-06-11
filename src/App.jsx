@@ -5,7 +5,7 @@ import Success from "./pages/Success.jsx";
 
 function App1() {
   return (
-    <HashRouter>
+    <HashRouter basename='/frontend_mentor-newsletter'>
     <Routes>
       <Route path="/" element={<Newsletter/>}/>
       <Route path="/success" element={<Success/>}/>
