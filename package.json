@@ -2,6 +2,7 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://rganga1.github.io/frontend_mentor-newsletter/",
   "type": "module",
   "scripts": {
     "dev": "vite",
