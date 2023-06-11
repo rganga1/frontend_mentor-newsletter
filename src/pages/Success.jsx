@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import iconSuccess from "/images/icon-success.svg"
 
 function Success() {
   const navigate = useNavigate();
@@ -8,8 +9,8 @@ function Success() {
       className="flex justify-center
     items-center min-h-screen bg-[#36384D]">
       <div className="flex flex-col gap-6 w-full sm:w-[480px] h-full sm:h-auto sm:rounded-xl bg-white p-2 sm:p-12">
-        <img
-          src="/images/icon-success.svg"
+        {/* <img src="/images/icon-success.svg" this is not working in the build with basename */}
+        <img src={iconSuccess}
           alt="success"
           className="w-[3.5rem] h-[3.5rem]"
         />
